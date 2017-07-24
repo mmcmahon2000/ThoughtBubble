@@ -1,0 +1,53 @@
+  span.center {
+		text-align: center;
+	}
+
+	div.scroll {
+		width: 100%;
+  	height: 200px;
+  	overflow: scroll;
+  	padding: 20px;
+	}
+
+	body {
+    font-family: Georgia;
+    margin:20px;
+  }
+
+  h1, h2 {
+    color:#4d8ea8;
+    text-align: center;
+  }
+
+  h3 {
+  	color: #4d8ea8;
+  }
+
+  #rcorners {
+    border-radius: 10px;
+    border: 2px solid #4d8ea8;
+    background-color: white; 
+  }
+
+	.userphoto {
+  	width: 100px;
+    height: 100px;
+		background: #ccc;
+		border-radius: 50%;
+  }
+
+  a.tabs {
+  	background-color: #d3f0ff; 
+  	color: black;
+  }
+
+  .topicphoto {
+    width: auto;
+    height: 200px;
+    border-radius:50%;
+  }
+
+  button.tab {
+    background-color: #ffbe87;
+    color: #4d8ea8
+  }
