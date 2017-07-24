@@ -70,7 +70,7 @@ p, ol, h3, li {
 <br>
 <br>
 <div class="container">
-	<div class="jumbotron" style="background-color:#f7d2b2;">
+	<div class="jumbotron" style="background-color:white;">
 		<h1 align="center" style="font-family:Georgia; color:#4d8ea8;">Welcome to ThoughtBubble!</h1>
 			<p align="center" style="color:#4d8ea8;">A place for sharing thoughts, ideas, and projects</p>
 			<p align="center">
