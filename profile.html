@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--navbar-->
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#f7d2b2;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="homepageloggedin.html" style="color:#4d8ea8;">ThoughtBubble</a>
+    </div>
+      <ul class="nav navbar-nav" style="margin-top:7.5px;">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary tab"><a href="homepageloggedin.html">Home</a></button>
+          <button type="button" class="btn btn-primary tab"><a href="discover.html">Discover</a></button>
+          <button type="button" class="btn btn-primary tab">Surprise Me!</button>
+        </div>
+      </ul>
+      <div class="pull-right">
+          <form class="navbar-form" role="search">
+            <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+            <div class="input-group-btn"">
+              <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+            </div>
+            <button type="button" class="btn btn-primary" style="background-color:#ffbe87;"><a href="profile.html"><img src="user.png" style="width:20px; height:20px;"></a></button>
+          </form>
+      </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <br><br><br>
+  <!--an edit profile button will be inserted here someday-->
+  <span class="center">
+  	<p><img src="user.png" class="userphoto" alt="profilePicture""></p>
+  <h3>Username</h3>
+  	<p>This is your profile. This is supposed to be a description. Yay.</p></span><hr>
+
+<div class="tabs">
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#wall" class="tabs">Wall</a></li>
+  <li><a data-toggle="tab" href="#geninfo" class="tabs">General Information</a></li>
+  <li><a data-toggle="tab" href="#photos" class="tabs">Photos</a></li>
+  <li><a data-toggle="tab" href="#contributions" class="tabs">Contributions</a></li>
+</ul>
+</div>
+
+<div class="tab-content">
+  	<div id="wall" class="tab-pane fade in active">
+    	<h3>Posts</h3>
+      	<p>Post stuff here.</p></br>
+      	<div class="scroll" contenteditable="true" id="rcorners"></div><br>
+      	<p><button type="submit" class="btn btn-primary btn-block" style="background-color: #4d8ea8">Submit</button></p>
+	</div>
+  	<div id="geninfo" class="tab-pane fade">
+    	<h3>About Me</h3> <!--retrieve values from database-->
+    		<p style="text-align: left">
+    		Name:<br>
+    		<input type="text" name="firstname" value="Jane" disabled>
+    		<input type="text" name="lastname" value="Doe" disabled><br>
+    		Age:<br>
+    		<input type="text" name="age" value=21 disabled><br>
+    		Gender:<br>
+    		<input type="text" name="gender" value="Female" disabled><br>
+    		Email:<br>
+    		<input type="text" name="email" value="jane@random.com" disabled><br>
+    		Location:<br>
+    		<input type="text" name="location" value="Places" disabled><br>
+    		</p>
+  	</div>
+  	<div id="photos" class="tab-pane fade">
+    	<h3>Photos</h3>
+    		<p>Store photos here.</p>
+  	</div>
+ 	<div id="contributions" class="tab-pane fade">
+    	<h3>I'm a Part of...</h3>
+     		<p>Creator of: 
+          <li><a href="topic.html">Topic 1</a></li>
+        </p>
+    		<p>Member of:
+          <li><a href="topic.html">Topic 1</a></li>
+          <li><a href="subtopic.html">Subtopic 2</li>
+        </p>
+ 	</div>
+</div>
+</div>
+
+</body>
+</html>
